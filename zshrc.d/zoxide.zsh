@@ -1,4 +1,4 @@
-if hash zoxide 2>/dev/null; then
+if [ "$(command -v zoxide)" ]; then
   eval "$(zoxide init --hook prompt zsh)"
   alias cdi=zi
 fi

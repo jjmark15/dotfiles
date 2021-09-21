@@ -1,4 +1,4 @@
-if hash brew 2>/dev/null; then
+if [ "$(command -v brew)" ]; then
   quick-update-brew() {
     brew update >/dev/null && brew upgrade
   }

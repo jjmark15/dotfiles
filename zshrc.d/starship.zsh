@@ -1,3 +1,3 @@
-if hash starship 2>/dev/null; then
+if [ "$(command -v starship)" ]; then
   eval "$(starship init zsh)"
 fi

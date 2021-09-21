@@ -1,4 +1,4 @@
-if hash dua 2>/dev/null; then
+if [ "$(command -v dua)" ]; then
   alias ncdu="dua i"
 fi
 

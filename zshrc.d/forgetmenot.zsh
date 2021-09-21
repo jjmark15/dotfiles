@@ -1,4 +1,4 @@
-if hash forgetmenot 2>/dev/null; then
+if [ "$(command -v forgetmenot)" ]; then
   alias fgmn=forgetmenot
   alias fmgn=forgetmenot
 fi

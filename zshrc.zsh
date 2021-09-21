@@ -30,4 +30,11 @@ mkcd() {
 }
 
 export DOTFILES_ZSHRC_DIR="$(dirname ${BASH_SOURCE:-$0})/zshrc.d"
-for f (${DOTFILES_ZSHRC_DIR}/*.zsh(N.)) . $f
+
+for f (${DOTFILES_ZSHRC_DIR}/priority/*.zsh(N.)); do
+  source $f
+done
+
+for f (${DOTFILES_ZSHRC_DIR}/*.zsh(N.)); do
+  source $f
+done

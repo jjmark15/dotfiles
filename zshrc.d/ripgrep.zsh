@@ -1,4 +1,4 @@
-if hash rg 2>/dev/null; then
+if [ "$(command -v rg)" ]; then
   alias grep=rg
 fi
 
