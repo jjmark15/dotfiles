@@ -3,5 +3,5 @@ if [ -f "${HOME}/.config/zellij/config.yml" ]; then
 fi
 
 if [ "$(command -v zellij)" ]; then
-    alias za='zellij attach || zellij'
+    alias za='zellij attach --create'
 fi
