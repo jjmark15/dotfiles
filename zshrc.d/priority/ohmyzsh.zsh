@@ -24,8 +24,6 @@ plugins=(
   zsh-autosuggestions
   kubectl
   rust
-  rustup
-  cargo
 )
 
 source $ZSH/oh-my-zsh.sh
