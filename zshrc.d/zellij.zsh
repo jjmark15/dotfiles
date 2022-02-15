@@ -4,4 +4,5 @@ fi
 
 if [ "$(command -v zellij)" ]; then
     alias za='zellij attach --create'
+    alias zax='zellij attach --create && exit'
 fi
