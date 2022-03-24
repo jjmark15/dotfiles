@@ -29,12 +29,17 @@ mkcd() {
   mkdir $1 && cd $1
 }
 
-export DOTFILES_ZSHRC_DIR="$(dirname ${BASH_SOURCE:-$0})/zshrc.d"
+export DOTFILES_ZSHRC_DIR="$(dirname "${BASH_SOURCE:-$0}")/zshrc.d"
 
-for f (${DOTFILES_ZSHRC_DIR}/priority/*.zsh(N.)); do
-  source $f
+priority_files=(
+  nixos.zsh
+  ohmyzsh.zsh
+)
+
+for file in "${priority_files[@]}"; do
+  source "${DOTFILES_ZSHRC_DIR}/priority/$file"
 done
 
-for f (${DOTFILES_ZSHRC_DIR}/*.zsh(N.)); do
-  source $f
+for f in "${DOTFILES_ZSHRC_DIR}"/*.zsh; do
+  source "$f"
 done
