@@ -67,3 +67,7 @@ themes:
     white: [255, 255, 255]
 
 theme: gruvbox-dark
+
+ui:
+  pane_frames:
+    rounded_corners: true
