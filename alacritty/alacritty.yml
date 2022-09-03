@@ -10,3 +10,9 @@ import:
 cursor:
   style:
     shape: Beam
+
+shell:
+  program: zellij
+  args:
+    - attach
+    - --create
