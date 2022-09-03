@@ -1,0 +1,15 @@
+window:
+  position:
+    # x: 850
+    # y: 400
+    x: 550
+    y: 350
+  dimensions:
+    columns: 200
+    lines: 50
+font:
+  normal:
+    family: Iosevka term
+    # family: Cascadia Mono PL
+    style: Regular
+  size: 10
