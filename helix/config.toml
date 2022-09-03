@@ -1,2 +1,12 @@
 # theme = "bogster"
-theme = "monokai_pro_machine"
+# theme = "monokai_pro_machine"
+# theme = "pop-dark"
+# theme = "dracula"
+theme = "gruvbox"
+
+[editor]
+cursorline = true
+color-modes = true
+
+[editor.indent-guides]
+render = true
