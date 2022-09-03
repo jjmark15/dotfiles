@@ -2,10 +2,12 @@ import:
 #  - ~/dev/dotfiles/alacritty/themes/argonaut.yml
 #  - ~/dev/dotfiles/alacritty/themes/ayu-dark.yml
 #  - ~/dev/dotfiles/alacritty/themes/breeze.yml
+#  - ~/dev/dotfiles/alacritty/themes/dracula.yml
   - ~/dev/dotfiles/alacritty/themes/gruvbox-dark.yml
 #  - ~/dev/dotfiles/alacritty/themes/horizon-dark.yml
 #  - ~/dev/dotfiles/alacritty/themes/kasugano.yml
 #  - ~/dev/dotfiles/alacritty/themes/nord.yml
+#  - ~/dev/dotfiles/alacritty/themes/pop-os.yml
 
 cursor:
   style:
