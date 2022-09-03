@@ -1,8 +1,9 @@
 # theme = "bogster"
+theme = "monokai_pro"
 # theme = "monokai_pro_machine"
 # theme = "pop-dark"
 # theme = "dracula"
-theme = "gruvbox"
+# theme = "gruvbox"
 
 [editor]
 cursorline = true
