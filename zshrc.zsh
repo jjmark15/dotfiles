@@ -10,10 +10,9 @@ export PATH="${HOME}/bin:$PATH"
 
 alias x="exit"
 alias dc="cd"
-alias emptyf='cat /dev/null > '
+alias emptyf='truncate --no-create --size 0 '
 alias shredq='shred -uz'
 
-# ls aliases
 alias la='ls -lah'
 alias sl='ls'
 alias ll='ls -lh'
@@ -26,10 +25,11 @@ psaux() {
 }
 
 mkcd() {
-  mkdir $1 && cd $1
+  mkdir "$1" && cd "$1" || exit
 }
 
-export DOTFILES_ZSHRC_DIR="$(dirname "${BASH_SOURCE:-$0}")/zshrc.d"
+export DOTFILES_ZSHRC_DIR
+DOTFILES_ZSHRC_DIR="$(dirname "${BASH_SOURCE:-$0}")/zshrc.d"
 
 priority_files=(
   nixos.zsh
@@ -37,9 +37,11 @@ priority_files=(
 )
 
 for file in "${priority_files[@]}"; do
+  # shellcheck disable=SC1090
   source "${DOTFILES_ZSHRC_DIR}/priority/$file"
 done
 
 for f in "${DOTFILES_ZSHRC_DIR}"/*.zsh; do
+  # shellcheck disable=SC1090
   source "$f"
 done
