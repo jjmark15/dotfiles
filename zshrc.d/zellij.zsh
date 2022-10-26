@@ -1,5 +1,5 @@
-if [ -f "${HOME}/.config/zellij/config.yml" ]; then
-  export ZELLIJ_CONFIG_FILE="${HOME}/.config/zellij/config.yml"
+if [ -f "${HOME}/.config/zellij/config.kdl" ]; then
+  export ZELLIJ_CONFIG_FILE="${HOME}/.config/zellij/config.kdl"
 fi
 
 if [ "$(command -v zellij)" ]; then
