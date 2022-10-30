@@ -5,4 +5,9 @@ fi
 if [ "$(command -v zellij)" ]; then
     alias za='zellij attach --create'
     alias zax='zellij attach --create && exit'
+
+    function zr () { zellij run --name "$*" -- zsh -ic "$*";}
+    function zrf () { zellij run --name "$*" --floating -- zsh -ic "$*";}
+    function ze () { zellij edit "$*";}
+    function zef () { zellij edit --floating "$*";}
 fi
