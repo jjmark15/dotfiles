@@ -9,5 +9,7 @@ if [ "$(command -v zellij)" ]; then
     function zr () { zellij run --name "$*" -- zsh -ic "$*";}
     function zrf () { zellij run --name "$*" --floating -- zsh -ic "$*";}
     function ze () { zellij edit "$*";}
+    function zed () { zellij edit -d down "$*";}
+    function zer () { zellij edit -d right "$*";}
     function zef () { zellij edit --floating "$*";}
 fi
