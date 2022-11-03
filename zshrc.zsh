@@ -6,6 +6,19 @@ addtopath() {
   fi
 }
 
+function path_has_bins {
+  if [[ -n $ZSH_VERSION ]]; then
+    builtin whence -p "$1" &> /dev/null
+  else  # bash:
+    builtin type -P "$1" &> /dev/null
+  fi
+  [[ $? -ne 0 ]] && return 1
+  if [[ $# -gt 1 ]]; then
+    shift  # We've just checked the first one
+    path_has_bins "$@"
+  fi
+}
+
 export PATH="${HOME}/bin:$PATH"
 
 alias x="exit"
