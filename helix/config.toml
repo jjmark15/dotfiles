@@ -8,6 +8,7 @@ theme = "monokai_pro"
 [editor]
 cursorline = true
 color-modes = true
+bufferline = "multiple"
 
 [editor.indent-guides]
 render = true
