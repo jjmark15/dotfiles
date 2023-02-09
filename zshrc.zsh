@@ -12,26 +12,6 @@ command_exists() {
 
 export PATH="${HOME}/bin:$PATH"
 
-alias x="exit"
-alias dc="cd"
-alias emptyf='truncate --no-create --size 0 '
-alias shredq='shred -uz'
-
-alias la='ls -lah'
-alias sl='ls'
-alias ll='ls -lh'
-alias l='ls'
-
-alias pls=sudo
-
-psaux() {
-  ps aux | grep -v grep | egrep -E --color=auto "PID|${1}"
-}
-
-mkcd() {
-  mkdir "$1" && cd "$1" || exit
-}
-
 export DOTFILES_ZSHRC_DIR
 DOTFILES_ZSHRC_DIR="$(dirname "${BASH_SOURCE:-$0}")/zshrc.d"
 

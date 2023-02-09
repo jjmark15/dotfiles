@@ -14,3 +14,23 @@ function kill-port() {
 
   kill -9 "$PID"
 }
+
+psaux() {
+  ps aux | grep -v grep | egrep -E --color=auto "PID|${1}"
+}
+
+mkcd() {
+  mkdir "$1" && cd "$1" || exit
+}
+
+alias x="exit"
+alias dc="cd"
+alias emptyf='truncate --no-create --size 0 '
+alias shredq='shred -uz'
+
+alias la='ls -lah'
+alias sl='ls'
+alias ll='ls -lh'
+alias l='ls'
+
+alias pls=sudo
