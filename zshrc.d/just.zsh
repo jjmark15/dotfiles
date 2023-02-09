@@ -1,4 +1,4 @@
-if [ "$(command -v just)" ]; then
+if command_exists just; then
   alias j=just
   alias jc="just --choose"
 fi

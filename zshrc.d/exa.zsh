@@ -1,4 +1,4 @@
-if [ "$(command -v exa)" ]; then
+if command_exists exa; then
   alias ls='exa'
   alias ll='exa -lh --git'
   alias lla='exa -lah --git'
