@@ -554,4 +554,5 @@ def "aliases for" [command: string] {
 
 alias x = exit
 alias ll = ls -l
+alias sl = ls
 alias cdi = zi
