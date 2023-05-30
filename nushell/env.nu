@@ -89,6 +89,7 @@ starship init nu | save -f ~/.cache/starship/init.nu
 zoxide init nushell | save -f ~/.zoxide.nu
 
 let-env NU_LIB_DIRS = [
+    ($nu.config-path | path dirname | path join 'lib/general'),
     ($nu.config-path | path dirname | path join 'lib/aliases'),
     ($nu.config-path | path dirname | path join 'lib/external'),
 ]
