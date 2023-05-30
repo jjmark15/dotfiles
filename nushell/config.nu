@@ -545,6 +545,7 @@ source ~/.cache/starship/init.nu
 source ~/.zoxide.nu
 
 use git_aliases.nu *
+use rtx.nu *
 
 # Display all aliases for a command
 def "aliases for" [command: string] {

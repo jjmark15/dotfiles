@@ -90,6 +90,7 @@ zoxide init nushell | save -f ~/.zoxide.nu
 
 let-env NU_LIB_DIRS = [
     ($nu.config-path | path dirname | path join 'lib/aliases'),
+    ($nu.config-path | path dirname | path join 'lib/external'),
 ]
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
