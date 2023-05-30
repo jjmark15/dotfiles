@@ -546,6 +546,11 @@ source ~/.zoxide.nu
 
 use git_aliases.nu *
 
+# Display all aliases for a command
+def "aliases for" [command: string] {
+  $nu.scope.aliases | where expansion =~ $command
+}
+
 alias x = exit
 alias ll = ls -l
 alias cdi = zi
