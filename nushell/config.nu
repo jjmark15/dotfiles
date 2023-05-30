@@ -544,6 +544,8 @@ let-env config = {
 source ~/.cache/starship/init.nu
 source ~/.zoxide.nu
 
+use git_aliases.nu *
+
 alias x = exit
 alias ll = ls -l
 alias cdi = zi

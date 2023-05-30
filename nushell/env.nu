@@ -88,5 +88,9 @@ starship init nu | save -f ~/.cache/starship/init.nu
 
 zoxide init nushell | save -f ~/.zoxide.nu
 
+let-env NU_LIB_DIRS = [
+    ($nu.config-path | path dirname | path join 'lib/aliases'),
+]
+
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
