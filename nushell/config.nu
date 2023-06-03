@@ -542,6 +542,7 @@ let-env config = {
 }
 
 source ~/.cache/starship/init.nu
+source ~/.cache/rtx/init.nu
 source ~/.zoxide.nu
 
 # Check if some command available in current shell
@@ -550,7 +551,6 @@ def 'is-installed' [ app: string ] {
 }
 
 use git_aliases.nu *
-use rtx.nu *
 use apt.nu *
 
 # Display all aliases for a command

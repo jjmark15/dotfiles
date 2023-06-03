@@ -86,6 +86,9 @@ let-env NU_PLUGIN_DIRS = [
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 
+mkdir ~/.cache/rtx
+rtx activate nu | save -f ~/.cache/rtx/init.nu
+
 zoxide init nushell | save -f ~/.zoxide.nu
 
 let-env NU_LIB_DIRS = [
