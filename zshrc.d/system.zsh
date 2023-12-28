@@ -34,3 +34,5 @@ alias ll='ls -lh'
 alias l='ls'
 
 alias pls=sudo
+
+alias bootbios="systemctl reboot --firmware-setup"
