@@ -542,7 +542,6 @@ let-env config = {
 }
 
 source ~/.cache/starship/init.nu
-source ~/.cache/rtx/init.nu
 source ~/.zoxide.nu
 
 # Check if some command available in current shell
