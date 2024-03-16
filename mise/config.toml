@@ -1,0 +1,6 @@
+[tools]
+
+gradle = ['8.0.1']
+java = ['temurin-21.0.2+13.0.LTS', 'temurin-17.0.6+10']
+kotlin = ['1.9.0']
+go = ['1.20.2']
