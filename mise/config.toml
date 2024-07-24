@@ -1,6 +1,7 @@
 [tools]
 
-gradle = ['8.0.1']
+gradle = ['latest']
 java = "graalvm-community-21.0.2"
-kotlin = ['1.9.0']
-go = ['1.20.2']
+kotlin = ['latest']
+go = ['latest']
+gleam = ['latest']
