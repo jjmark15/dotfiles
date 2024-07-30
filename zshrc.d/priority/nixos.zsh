@@ -2,6 +2,6 @@ if [ -e "$HOME"/.nix-profile/etc/profile.d/nix.sh ]; then . "$HOME"/.nix-profile
 
 if command_exists nix; then
   quick-update-nixos() {
-      nix profile upgrade '.*' && nix-collect-garbage
+      nix profile upgrade --all && nix-collect-garbage
   }
 fi
