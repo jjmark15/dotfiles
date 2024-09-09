@@ -9,6 +9,6 @@ config.font = wezterm.font 'JetBrains Mono'
 config.initial_cols = 120
 config.initial_rows = 36
 config.enable_tab_bar = false
-config.default_prog = { 'zellij' }
+config.default_prog = { 'zellij', 'attach', '--create' }
 
 return config
