@@ -5,6 +5,7 @@ fi
 if command_exists zellij; then
     alias za='zellij attach --create'
     alias zax='zellij attach --create && exit'
+    alias zrt='zellij action rename-tab $(basename $(git rev-parse --show-toplevel))'
 
     function zr () { zellij run --name "$*" -- zsh -ic "$*";}
     function zrf () { zellij run --name "$*" --floating -- zsh -ic "$*";}
