@@ -10,5 +10,6 @@ config.initial_cols = 120
 config.initial_rows = 36
 config.enable_tab_bar = false
 config.default_prog = { 'zellij', 'attach', '--create' }
+config.default_cursor_style = 'SteadyBar'
 
 return config
