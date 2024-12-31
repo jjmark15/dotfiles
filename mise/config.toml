@@ -1,7 +1,7 @@
 [tools]
 
 gradle = ['latest']
-java = "graalvm-community-21.0.2"
 kotlin = ['latest']
 go = ['latest']
 gleam = ['latest']
+java = "graalvm-community-21.0.2"
